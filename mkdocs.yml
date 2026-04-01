@@ -1,0 +1,29 @@
+site_name: Brainrot Docs 666X
+
+theme:
+  name: material
+  features:
+    - content.code.annotate
+    - content.tabs.link
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - toc.follow
+
+plugins:
+  - search
+  - awesome-pages
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+  - minify:
+      minify_html: true
+  - macros
+  - mkdocstrings
+  - social
+  - optimize
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - admonition
