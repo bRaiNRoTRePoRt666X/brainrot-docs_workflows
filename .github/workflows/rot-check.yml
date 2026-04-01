@@ -1,0 +1,11 @@
+name: Keep The Rot Fresh
+on:
+  push:
+    branches: [ main ]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check for maximum brainrot
+        run: echo "✅ All departments certified brainrotted"
